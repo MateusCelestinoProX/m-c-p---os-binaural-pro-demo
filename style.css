@@ -45,7 +45,7 @@ body {
   display: none !important;
 }
 
-/* Tela de Login Segura (Zyzz Blurred VisionOS) */
+/* Camada Base Fallback (VisionOS Glass) */
 .login-screen {
   position: fixed;
   top: 0;
@@ -67,7 +67,7 @@ body {
   left: -15px;
   right: -15px;
   bottom: -15px;
-  background-image: url('onboarding.jpg'), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80');
+  background-image: radial-gradient(circle at center, rgba(35, 10, 18, 0.9), #050204), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

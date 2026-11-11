@@ -1,13 +1,16 @@
-// Binaural Labs Pro - Service Worker for Offline Performance & Edge Caching
-const CACHE_NAME = 'binaural-pro-v4';
+// Binaural Labs Pro Demo - Service Worker for Offline Performance & Edge Caching
+const CACHE_NAME = 'binaural-pro-demo-v1';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './js/webgl-backgrounds.js',
+  './js/ogl.js',
+  './js/vendor/three.min.js',
   './manifest.json',
-  './onboarding.jpg'
+  './favicon.svg',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', (event) => {

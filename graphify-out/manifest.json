@@ -1,8 +1,8 @@
 {
   "app.js": {
-    "mtime": 1794360548.1156147,
-    "seen": 1794360706.309039,
-    "ast_hash": "7d56fe7b3bdf453fefaccdbadbbaa570",
+    "mtime": 1794411280.5532072,
+    "seen": 1794411332.056093,
+    "ast_hash": "41d11ffbbeedd26086aed29e8b522c5f",
     "semantic_hash": ""
   },
   "js/ogl.js": {
@@ -18,39 +18,39 @@
     "semantic_hash": ""
   },
   "js/webgl-backgrounds.js": {
-    "mtime": 1794360293.2579286,
-    "seen": 1794360706.309045,
-    "ast_hash": "67b9760dce7edaab07347970961fdfe9",
+    "mtime": 1794410672.1043394,
+    "seen": 1794411332.056101,
+    "ast_hash": "1bdf0bc951394e7bb85e3a30b208887a",
     "semantic_hash": ""
   },
   "manifest.json": {
-    "mtime": 1794360293.2498794,
-    "seen": 1794360706.309046,
-    "ast_hash": "d0c365209fbc548cbba927e5ecdd6644",
+    "mtime": 1794410536.483037,
+    "seen": 1794411332.0561018,
+    "ast_hash": "114cf537080c827cd20adfa7b82b066a",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1794360676.4336348,
-    "seen": 1794360706.309046,
-    "ast_hash": "d9f6752f62d9e0e779e333f50995eec3",
+    "mtime": 1794410536.4870117,
+    "seen": 1794411332.0561018,
+    "ast_hash": "16a842e6e1ec5635edb5f882cd0331c8",
     "semantic_hash": ""
   },
   "sw.js": {
-    "mtime": 1794360293.250191,
-    "seen": 1794360706.309047,
-    "ast_hash": "dd76f5fd7f06526efb51696ea5aa7801",
+    "mtime": 1794410536.478565,
+    "seen": 1794411332.056103,
+    "ast_hash": "ba468e145431344a73d9a64233391ffc",
     "semantic_hash": ""
   },
   "vercel.json": {
-    "mtime": 1794360293.2548196,
-    "seen": 1794360706.3090482,
-    "ast_hash": "3eb6a1657390d3e01b4980608a95d405",
+    "mtime": 1794410536.466304,
+    "seen": 1794411332.056104,
+    "ast_hash": "b0034f95c1e98548f482d6ba9c6702df",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1794360610.7275734,
-    "seen": 1794360706.3090482,
-    "ast_hash": "9d25f0d4cb8dd546f3c174e7198e2c90",
+    "mtime": 1794410672.0375724,
+    "seen": 1794411332.056106,
+    "ast_hash": "7e1b5273d9512606b479b487978a5ea2",
     "semantic_hash": ""
   },
   "apple-touch-icon.png": {
@@ -93,12 +93,6 @@
     "mtime": 1794360293.2540147,
     "seen": 1794360706.309053,
     "ast_hash": "b8fc4e98590598ffa34a9984be330691",
-    "semantic_hash": ""
-  },
-  "onboarding.jpg": {
-    "mtime": 1794360293.2543633,
-    "seen": 1794360706.309054,
-    "ast_hash": "b6aaad1e8da08169d0eb9aa850ab40d7",
     "semantic_hash": ""
   },
   "audios/alpha-flow.mp3": {

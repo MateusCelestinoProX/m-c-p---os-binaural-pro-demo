@@ -1,7 +1,7 @@
 {
   "name": "Binaural Labs Pro",
   "short_name": "BinauralPro",
-  "description": "MP3 Player Privado Ultra Minimalista com Web Audio DSP e Frequências Binaurais",
+  "description": "Instância Demo do MP3 Player Binaural Pro com Web Audio DSP e Shaders WebGL",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",

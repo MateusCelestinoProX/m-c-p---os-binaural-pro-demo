@@ -16,9 +16,10 @@
   "keywords": [
     "binaural",
     "web-audio-api",
+    "webgl",
     "pwa",
     "glassmorphism",
-    "aes-256-gcm",
+    "portfolio-demo",
     "indexeddb"
   ],
   "author": "Mateus Celestino",

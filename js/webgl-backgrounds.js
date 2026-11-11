@@ -432,29 +432,6 @@ const originToFlip = origin => {
     case 'top-left': return [1, 0];
     case 'bottom-right': return [0, 1];
     case 'bottom-left': return [1, 1];
-
-    case 'ancidsquares':
-    case 'acidsquares':
-      currentCleanup = initAcidSquares(container, {
-        color1: "#5227FF", color2: "#A855F7", color3: "#FFFFFF",
-        speed: 0.7, zoom: 1.3, density: 10.0, glow: 1.0, mouseInteraction: true
-      });
-      break;
-
-    case 'moltenmetal':
-      currentCleanup = initMoltenMetal(container, {
-        color1: "#5227FF", color2: "#FF9FFC", color3: "#FFFFFF",
-        speed: 0.35, scale: 4, detail: 3, mouseInteraction: true
-      });
-      break;
-
-    case 'lighttunnel':
-      currentCleanup = initLightTunnel(container, {
-        cableColor: "#A855F7", pulseColor: "#A855F7", tunnelColor: "#5227FF",
-        speed: 0.1, cableCount: 20, mouseInteraction: true
-      });
-      break;
-
     default: return [0, 0];
   }
 };
@@ -3048,6 +3025,28 @@ window.renderWebGLBackground = function(type) {
         enableMouseInteraction: true,
         mouseInfluence: 2.0,
         lightMode: false
+      });
+      break;
+
+    case 'ancidsquares':
+    case 'acidsquares':
+      currentCleanup = initAcidSquares(container, {
+        color1: "#5227FF", color2: "#A855F7", color3: "#FFFFFF",
+        speed: 0.7, zoom: 1.3, density: 10.0, glow: 1.0, mouseInteraction: true
+      });
+      break;
+
+    case 'moltenmetal':
+      currentCleanup = initMoltenMetal(container, {
+        color1: "#5227FF", color2: "#FF9FFC", color3: "#FFFFFF",
+        speed: 0.35, scale: 4, detail: 3, mouseInteraction: true
+      });
+      break;
+
+    case 'lighttunnel':
+      currentCleanup = initLightTunnel(container, {
+        cableColor: "#A855F7", pulseColor: "#A855F7", tunnelColor: "#5227FF",
+        speed: 0.1, cableCount: 20, mouseInteraction: true
       });
       break;
 
@@ -10148,6 +10147,14 @@ window.stopWebGLBackground = function() {
     container.innerHTML = '';
   }
   currentActiveType = null;
+};
+
+window.pauseWebGLBackground = function() {
+  if (typeof window !== 'undefined') window.__PAUSE_WEBGL_SHADERS__ = true;
+};
+
+window.resumeWebGLBackground = function() {
+  if (typeof window !== 'undefined') window.__PAUSE_WEBGL_SHADERS__ = false;
 };
 
 

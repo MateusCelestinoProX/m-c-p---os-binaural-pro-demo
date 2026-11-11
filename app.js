@@ -1,6 +1,6 @@
 // ==========================================================================
-// BINAURAL LABS - MP3 PLAYER PRO (FRONT-END ONLY & CRIPTOGRAFIA AES-256-GCM)
-// Web Audio API DSP + Criptografia Web Crypto + Cache Offline IndexedDB
+// BINAURAL LABS PRO - SOFTWARE PORTFOLIO DEMO (FRONT-END ONLY)
+// Web Audio API DSP + Shaders WebGL OGL + Cache Offline IndexedDB
 // ==========================================================================
 
 // --------------------------------------------------------------------------
@@ -124,88 +124,13 @@ const DEFAULT_TRACKS = [
 ];
 
 // --------------------------------------------------------------------------
-// 1. COFRE CRIPTOGRÁFICO AES-256-GCM (PROTEÇÃO TOTAL FRONT-END ONLY)
-// --------------------------------------------------------------------------
-const VAULT_CONFIG = {
-  salt: "f7dpYLB1XNQunNF50DcxSw==",
-  iv: "1LIgfi0HrFmPcklq",
-  ciphertext: "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",
-  iterations: 100000
-};
-
-function base64ToUint8Array(base64) {
-  const binaryString = window.atob(base64);
-  const len = binaryString.length;
-  const bytes = new Uint8Array(len);
-  for (let i = 0; i < len; i++) {
-    bytes[i] = binaryString.charCodeAt(i);
-  }
-  return bytes;
-}
-
-function uint8ArrayToBase64(bytes) {
-  let binary = '';
-  const len = bytes.byteLength;
-  for (let i = 0; i < len; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return window.btoa(binary);
-}
-
-async function deriveAesKey(passcode, saltBytes) {
-  const enc = new TextEncoder();
-  const normalized = passcode.trim().toLowerCase();
-  
-  const baseKey = await window.crypto.subtle.importKey(
-    'raw',
-    enc.encode(normalized),
-    'PBKDF2',
-    false,
-    ['deriveKey']
-  );
-
-  return await window.crypto.subtle.deriveKey(
-    {
-      name: 'PBKDF2',
-      salt: saltBytes,
-      iterations: VAULT_CONFIG.iterations,
-      hash: 'SHA-256'
-    },
-    baseKey,
-    { name: 'AES-GCM', length: 256 },
-    false,
-    ['decrypt']
-  );
-}
-
-async function unlockVaultWithPasscode(passcode) {
-  const saltBytes = base64ToUint8Array(VAULT_CONFIG.salt);
-  const ivBytes = base64ToUint8Array(VAULT_CONFIG.iv);
-  const ciphertextBytes = base64ToUint8Array(VAULT_CONFIG.ciphertext);
-
-  const aesKey = await deriveAesKey(passcode, saltBytes);
-
-  // Tentativa de decriptação autenticada AES-GCM
-  const decryptedBuf = await window.crypto.subtle.decrypt(
-    { name: 'AES-GCM', iv: ivBytes },
-    aesKey,
-    ciphertextBytes
-  );
-
-  const dec = new TextDecoder();
-  const jsonStr = dec.decode(decryptedBuf);
-  return JSON.parse(jsonStr);
-}
-
-// --------------------------------------------------------------------------
 // 2. GALERIAS DE BACKGROUNDS ESTÁTICAS E SHADERS WEBGL (DEMO EDITION)
 // --------------------------------------------------------------------------
 const GALLERIES = {
   soft: [
     "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1920&q=80",
-    "onboarding.jpg"
+    "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1920&q=80"
   ],
   red: [
     "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1920&q=80",
@@ -234,6 +159,8 @@ const webglTypes = [
   "softaurora", "particles", "ghostfibers", "plasmawave", "strands", "siderays", "beams", "floatinglines", "silk", "radar", "ripplegrid", "pixelblast", "magicrings", "gridscan", "liquidchrome", "linewaves", "ferrofluid", "dither", "darkveil", "webthreads", "topography", "balatro", "faultyterminal", "morphslider", "antigravity", "aurora", "letterglitch", "plasma", "liquidether", "orb", "prism", "prismaticburst", "lightning", "evileye", "lighttunnel", "ancidsquares", "moltenmetal"
 ];
 
+const VALID_BG_CATEGORIES = new Set(["random", "galaxybits", ...Object.keys(GALLERIES), ...webglTypes]);
+
 function getRandomGalleryFromPool() {
   return GALLERIES_POOL[Math.floor(Math.random() * GALLERIES_POOL.length)];
 }
@@ -243,9 +170,12 @@ function getRandomGalleryFromPool() {
 // --------------------------------------------------------------------------
 let isUnlocked = false;
 let wallpaperCategory = localStorage.getItem('binaural_wallpaper_category') || 'random';
-if (wallpaperCategory === 'ancidsquares' || wallpaperCategory === 'acidsquares') {
+if (wallpaperCategory === 'acidsquares') {
+  wallpaperCategory = 'ancidsquares';
+  try { localStorage.setItem('binaural_wallpaper_category', 'ancidsquares'); } catch(e) {}
+} else if (!VALID_BG_CATEGORIES.has(wallpaperCategory)) {
   wallpaperCategory = 'random';
-  localStorage.setItem('binaural_wallpaper_category', 'random');
+  try { localStorage.setItem('binaural_wallpaper_category', 'random'); } catch(e) {}
 }
 let currentBgIndex = 0;
 let bgInterval = null;
@@ -286,12 +216,6 @@ const compressorConfig = {
 
 // Elementos do DOM estáticos
 const loginScreen = document.getElementById('login-screen');
-const loginCard = document.getElementById('login-card');
-const vaultForm = document.getElementById('vault-form');
-const passcodeInput = document.getElementById('passcode-input');
-const loginError = document.getElementById('login-error');
-const unlockBtn = document.getElementById('unlock-btn');
-
 const appMain = document.getElementById('app-main');
 const bgSlideshow = document.getElementById('bg-slideshow');
 const bgLayerActive = document.getElementById('bg-layer-active');
@@ -302,7 +226,6 @@ const badgePlayingCount = document.getElementById('badge-playing-count');
 
 const btnPlayAll = document.getElementById('btn-play-all');
 const btnPauseAll = document.getElementById('btn-pause-all');
-const btnLock = document.getElementById('btn-lock');
 
 // ==============================================================================
 // 🧠 SISTEMA DE MEMÓRIA DE REPRODUÇÃO BINAURAL (WEB & MOBILE APK)
@@ -463,6 +386,15 @@ async function saveCachedAudio(trackId, blob) {
 // --------------------------------------------------------------------------
 // 5. RENDERIZAÇÃO DAS FAIXAS ULTRA GLASSMORPHISM
 // --------------------------------------------------------------------------
+function escapeHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function renderTracks(tracks) {
   const container = document.getElementById('tracks-list');
   if (!container) return;
@@ -472,11 +404,17 @@ function renderTracks(tracks) {
   const sortedTracks = [...tracks].sort((a, b) => (a.order || 99) - (b.order || 99));
 
   sortedTracks.forEach((track, index) => {
+    const safeId = escapeHtml(String(track.id || '').replace(/[^a-zA-Z0-9_-]/g, ''));
+    const safeTitle = escapeHtml(track.title);
+    const safeDesc = escapeHtml(track.desc || track.description);
+    const safeSize = escapeHtml(track.size || 'HQ');
+    const safeFile = escapeHtml(track.file);
+
     const card = document.createElement('div');
     const isFeatured = track.order === 1;
     card.className = isFeatured ? "track-card glass-panel master-highlight-card" : "track-card glass-panel";
-    card.id = `card-${track.id}`;
-    card.setAttribute('data-track-id', track.id);
+    card.id = `card-${safeId}`;
+    card.setAttribute('data-track-id', safeId);
     card.style.setProperty('--card-idx', index);
     
     card.innerHTML = `
@@ -488,26 +426,26 @@ function renderTracks(tracks) {
         </div>
         <div class="track-meta">
           <div class="track-title-wrapper">
-            <h4>${track.title}</h4>
+            <h4>${safeTitle}</h4>
             ${isFeatured ? '<span class="badge-master-author"><i class="fa-solid fa-wand-magic-sparkles"></i> Demo Highlight</span>' : ''}
           </div>
-          <p>${track.desc || track.description}</p>
+          <p>${safeDesc}</p>
         </div>
-        <button id="btn-toggle-${track.id}" class="btn-play-track" data-action="play" title="Reproduzir / Pausar">
+        <button id="btn-toggle-${safeId}" class="btn-play-track" data-action="play" title="Reproduzir / Pausar">
           <i class="fa-solid fa-play"></i>
         </button>
       </div>
       <div class="track-controls">
         <!-- Controle de Volume -->
         <div class="control-row">
-          <span class="label"><i class="fa-solid fa-volume-low"></i> Volume: <strong id="volume-val-${track.id}">100%</strong></span>
-          <input type="range" id="volume-slider-${track.id}" min="0.0" max="1.0" step="0.05" value="1.0" class="styled-slider track-volume-slider">
+          <span class="label"><i class="fa-solid fa-volume-low"></i> Volume: <strong id="volume-val-${safeId}">100%</strong></span>
+          <input type="range" id="volume-slider-${safeId}" min="0.0" max="1.0" step="0.05" value="1.0" class="styled-slider track-volume-slider">
         </div>
 
         <!-- Controle de Velocidade -->
         <div class="control-row">
-          <span class="label"><i class="fa-solid fa-gauge-high"></i> Velocidade: <strong id="speed-val-${track.id}">1.0x</strong></span>
-          <input type="range" id="speed-slider-${track.id}" min="0.5" max="5.0" step="0.1" value="1.0" class="styled-slider track-speed-slider">
+          <span class="label"><i class="fa-solid fa-gauge-high"></i> Velocidade: <strong id="speed-val-${safeId}">1.0x</strong></span>
+          <input type="range" id="speed-slider-${safeId}" min="0.5" max="5.0" step="0.1" value="1.0" class="styled-slider track-speed-slider">
         </div>
         
         <!-- Amplificador de Ganho Individual -->
@@ -518,40 +456,40 @@ function renderTracks(tracks) {
               <span>Amplificar Som Natural</span>
             </div>
             <label class="switch">
-              <input type="checkbox" id="btn-toggle-boost-${track.id}" class="track-boost-toggle">
+              <input type="checkbox" id="btn-toggle-boost-${safeId}" class="track-boost-toggle">
               <span class="slider-round"></span>
             </label>
           </div>
-          <div class="track-amp-slider-container disabled" id="amp-slider-wrapper-${track.id}">
-            <span class="slider-label">Ganho Extra: <strong id="boost-val-${track.id}">1.0x</strong></span>
-            <input type="range" id="boost-slider-${track.id}" min="1.0" max="4.0" step="0.1" value="1.0" class="styled-slider track-boost-slider" disabled>
+          <div class="track-amp-slider-container disabled" id="amp-slider-wrapper-${safeId}">
+            <span class="slider-label">Ganho Extra: <strong id="boost-val-${safeId}">1.0x</strong></span>
+            <input type="range" id="boost-slider-${safeId}" min="1.0" max="4.0" step="0.1" value="1.0" class="styled-slider track-boost-slider" disabled>
           </div>
         </div>
 
         <!-- Caching e Download Direto no IndexedDB -->
         <div class="track-download-row">
-          <button id="btn-download-${track.id}" class="btn-download-track">
-            <i class="fa-solid fa-cloud-arrow-down"></i> <span id="download-text-${track.id}">Salvar Offline (${track.size || 'HQ'})</span>
+          <button id="btn-download-${safeId}" class="btn-download-track">
+            <i class="fa-solid fa-cloud-arrow-down"></i> <span id="download-text-${safeId}">Salvar Offline (${safeSize})</span>
           </button>
-          <div class="download-progress-bar" id="download-progress-wrapper-${track.id}">
-            <div class="download-progress-fill" id="download-progress-fill-${track.id}"></div>
+          <div class="download-progress-bar" id="download-progress-wrapper-${safeId}">
+            <div class="download-progress-fill" id="download-progress-fill-${safeId}"></div>
           </div>
         </div>
 
         <div class="control-row-bottom">
           <label class="loop-toggle">
-            <input type="checkbox" id="loop-${track.id}" checked>
+            <input type="checkbox" id="loop-${safeId}" checked>
             <span>Repetir faixa</span>
           </label>
           <div class="quick-speed-buttons">
-            <button class="btn-quick-speed" data-target="speed-slider-${track.id}" data-value="1.0">1x</button>
-            <button class="btn-quick-speed" data-target="speed-slider-${track.id}" data-value="2.0">2x</button>
-            <button class="btn-quick-speed" data-target="speed-slider-${track.id}" data-value="3.0">3x</button>
-            <button class="btn-quick-speed" data-target="speed-slider-${track.id}" data-value="5.0">5x</button>
+            <button class="btn-quick-speed" data-target="speed-slider-${safeId}" data-value="1.0">1x</button>
+            <button class="btn-quick-speed" data-target="speed-slider-${safeId}" data-value="2.0">2x</button>
+            <button class="btn-quick-speed" data-target="speed-slider-${safeId}" data-value="3.0">3x</button>
+            <button class="btn-quick-speed" data-target="speed-slider-${safeId}" data-value="5.0">5x</button>
           </div>
         </div>
       </div>
-      <audio id="audio-${track.id}" src="${track.file}" loop preload="auto" crossorigin="anonymous"></audio>
+      <audio id="audio-${safeId}" src="${safeFile}" loop preload="metadata" crossorigin="anonymous"></audio>
     `;
     
     container.appendChild(card);
@@ -1441,7 +1379,14 @@ function toggleMasterMute() {
   }
 }
 
+let _masterVolBound = false;
 function setupMasterVolumeControls() {
+  if (_masterVolBound) {
+    setMasterVolume(masterVolume);
+    return;
+  }
+  _masterVolBound = true;
+
   const masterSlider = document.getElementById('master-volume-slider');
   const muteBtn = document.getElementById('btn-master-mute');
   const decBtn = document.getElementById('btn-master-dec');
@@ -1600,7 +1545,15 @@ function toggleMasterBoost(enabled) {
   }
 }
 
+let _masterBoostBound = false;
 function setupMasterBoostControls() {
+  if (_masterBoostBound) {
+    setMasterBoost(masterBoost);
+    toggleMasterBoost(isMasterBoostEnabled);
+    return;
+  }
+  _masterBoostBound = true;
+
   const toggle = document.getElementById('btn-toggle-master-boost');
   const slider = document.getElementById('master-boost-slider');
   const decBtn = document.getElementById('btn-gain-dec');
@@ -1732,28 +1685,39 @@ async function processDownloadQueue() {
   try {
     const targetUrl = track.file;
     const response = await fetch(targetUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status} ao baixar áudio`);
+    }
     const contentLength = response.headers.get('content-length');
     const total = parseInt(contentLength, 10) || 0;
     
-    let loaded = 0;
-    const reader = response.body.getReader();
-    const chunks = [];
-    
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      chunks.push(value);
-      loaded += value.length;
+    let blob;
+    if (response.body && typeof response.body.getReader === 'function') {
+      let loaded = 0;
+      const reader = response.body.getReader();
+      const chunks = [];
       
-      if (total && progressFill) {
-        const pct = Math.round((loaded / total) * 100);
-        progressFill.style.width = `${pct}%`;
-        if (downloadText) downloadText.textContent = `Baixando ${pct}%...`;
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        loaded += value.length;
+        
+        if (total && progressFill) {
+          const pct = Math.min(100, Math.round((loaded / total) * 100));
+          progressFill.style.width = `${pct}%`;
+          if (downloadText) downloadText.textContent = `Baixando ${pct}%...`;
+        }
       }
+      const isWav = targetUrl.toLowerCase().endsWith('.wav');
+      blob = new Blob(chunks, { type: isWav ? 'audio/wav' : 'audio/mp3' });
+    } else {
+      blob = await response.blob();
     }
-    
-    const isWav = targetUrl.toLowerCase().endsWith('.wav');
-    const blob = new Blob(chunks, { type: isWav ? 'audio/wav' : 'audio/mp3' });
+
+    if (!blob || blob.size === 0) {
+      throw new Error('Blob de áudio vazio');
+    }
     await saveCachedAudio(trackId, blob);
     
     if (audio) {
@@ -1830,7 +1794,7 @@ function initBackground() {
 
   function playNextVideoTrack() {
     if (wallpaperCategory !== "video") return;
-    if (!video1 || !video2) return;
+    if (!video1 || !video2 || !CINEMATIC_VIDEOS || CINEMATIC_VIDEOS.length === 0) return;
 
     video1.style.display = "block";
     video2.style.display = "block";
@@ -1870,7 +1834,8 @@ function initBackground() {
       const randomId = Math.floor(Math.random() * 1000);
       return `https://picsum.photos/1920/1080?random=${randomId}`;
     } else {
-      const list = GALLERIES[category] || GALLERIES.gym;
+      const list = GALLERIES[category] || GALLERIES.soft;
+      if (!list || list.length === 0) return GALLERIES.soft[0];
       const img = list[currentBgIndex % list.length];
       currentBgIndex = (currentBgIndex + 1) % list.length;
       return img;
@@ -1886,13 +1851,10 @@ function initBackground() {
 
     const labels = {
       random: "🎲 Aleatório Dinâmico",
-      gym: "🏋️ GYM Images",
-      flowers: "🌸 Flowers",
-      red: "🔴 Red",
-      soft: "💿 Gen X Soft Club",
-      motivation: "💪 Motivacional",
-      video: "🌐 Cinematic Video",
-      api: "🌐 API Unsplash",
+      soft: "💿 Minimal Dark Glass",
+      red: "🔴 Crimson Cyber",
+      nature: "🌿 Zen Nature",
+      space: "🌌 Deep Cosmos",
       galaxybits: "✨ Shaders Rotativos"
     };
     updateIndicator(labels[effectiveCategory] || `✨ ${effectiveCategory.toUpperCase()}`);
@@ -2199,65 +2161,12 @@ function drawVisualizer() {
 }
 
 // --------------------------------------------------------------------------
-// 10. FLUXO DE DESBLOQUEIO & CONTROLE DE SESSÃO
+// 10. FLUXO DE INICIALIZAÇÃO DA DEMO
 // --------------------------------------------------------------------------
-async function handleUnlockSubmit(e) {
-  if (e) e.preventDefault();
-  
-  const rawPasscode = passcodeInput ? passcodeInput.value : "";
-  if (!rawPasscode) {
-    showUnlockError("Digite a chave de acesso.");
-    return;
-  }
-
-  if (unlockBtn) {
-    unlockBtn.disabled = true;
-    unlockBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Decriptando cofre...';
-  }
-  if (loginError) loginError.textContent = "";
-
-  try {
-    let decryptedTracks = null;
-    try {
-      decryptedTracks = await unlockVaultWithPasscode(rawPasscode);
-    } catch(cipherErr) {
-      console.warn("AES-GCM decrypt warning, utilizando catálogo local:", cipherErr);
-    }
-
-    if (!decryptedTracks || !Array.isArray(decryptedTracks) || decryptedTracks.length === 0) {
-      decryptedTracks = DEFAULT_TRACKS;
-    }
-
-    // Salvar token na sessão atual
-    try {
-      sessionStorage.setItem('binaural_vault_key', rawPasscode);
-    } catch(e){}
-
-    unlockAppWithTracks(decryptedTracks);
-  } catch (err) {
-    showUnlockError("Chave incorreta ou falha criptográfica.");
-  } finally {
-    if (unlockBtn) {
-      unlockBtn.disabled = false;
-      unlockBtn.innerHTML = '<i class="fa-solid fa-key"></i> Desbloquear Painel';
-    }
-  }
-}
-
-function showUnlockError(msg) {
-  if (loginError) loginError.textContent = msg;
-  if (loginCard) {
-    loginCard.classList.add('shake');
-    setTimeout(() => loginCard.classList.remove('shake'), 450);
-  }
-  if (passcodeInput) passcodeInput.focus();
-}
-
 function unlockAppWithTracks(tracks) {
   isUnlocked = true;
   tracksData = (tracks && tracks.length > 0) ? [...tracks] : [...DEFAULT_TRACKS];
   
-  if (loginScreen) loginScreen.classList.add('authenticated-hidden');
   if (appMain) appMain.classList.remove('authenticated-hidden');
   if (bgSlideshow) bgSlideshow.classList.remove('authenticated-hidden');
   
@@ -2283,6 +2192,9 @@ function unlockAppWithTracks(tracks) {
 const DemoShowcase = {
   isTransitioned: false,
   timer: null,
+  progressInterval: null,
+  hideTimeout: null,
+  _keyBound: false,
 
   init() {
     const splash = document.getElementById('demo-splash-screen');
@@ -2294,9 +2206,9 @@ const DemoShowcase = {
 
     if (!splash) return;
 
-    // Simulação progressiva e suave de inicialização dos motores DSP
+    if (this.progressInterval) clearInterval(this.progressInterval);
     let currentPct = 0;
-    const progressInterval = setInterval(() => {
+    this.progressInterval = setInterval(() => {
       currentPct += Math.floor(Math.random() * 15) + 12;
       if (currentPct > 100) currentPct = 100;
 
@@ -2309,16 +2221,18 @@ const DemoShowcase = {
         progressText.innerHTML = '<i class="fa-solid fa-sliders"></i> Calibrando Web Audio DSP & Limitadores...';
       } else if (currentPct >= 100 && progressText) {
         progressText.innerHTML = '<i class="fa-solid fa-circle-check" style="color: #30D158;"></i> Sistema pronto para audição!';
-        clearInterval(progressInterval);
+        clearInterval(this.progressInterval);
       }
     }, 110);
 
-    // Transição automática suave
+    // Transição automática suave em 1.5s
+    clearTimeout(this.timer);
     this.timer = setTimeout(() => {
       this.triggerEntrance();
-    }, 1700);
+    }, 1500);
 
-    if (enterBtn) {
+    if (enterBtn && !enterBtn._demoBound) {
+      enterBtn._demoBound = true;
       enterBtn.addEventListener('click', (e) => {
         e.preventDefault();
         clearTimeout(this.timer);
@@ -2326,37 +2240,44 @@ const DemoShowcase = {
       });
     }
 
-    if (replayBtn) {
+    if (replayBtn && !replayBtn._demoBound) {
+      replayBtn._demoBound = true;
       replayBtn.addEventListener('click', (e) => {
         e.preventDefault();
         this.replay();
       });
     }
 
-    window.addEventListener('keydown', (e) => {
-      if (!this.isTransitioned && (e.code === 'Space' || e.code === 'Enter')) {
-        clearTimeout(this.timer);
-        this.triggerEntrance();
-      }
-    }, { once: true });
+    if (!this._keyBound) {
+      this._keyBound = true;
+      window.addEventListener('keydown', (e) => {
+        if (!this.isTransitioned && (e.code === 'Space' || e.code === 'Enter')) {
+          clearTimeout(this.timer);
+          this.triggerEntrance();
+        }
+      });
+    }
   },
 
   triggerEntrance() {
     if (this.isTransitioned) return;
     this.isTransitioned = true;
+    if (this.progressInterval) clearInterval(this.progressInterval);
+    if (this.hideTimeout) clearTimeout(this.hideTimeout);
 
     const splash = document.getElementById('demo-splash-screen');
     const appMain = document.getElementById('app-main');
 
     if (splash) {
       splash.classList.add('dismissing');
-      setTimeout(() => {
+      this.hideTimeout = setTimeout(() => {
         splash.style.display = 'none';
       }, 750);
     }
 
     if (appMain) {
       appMain.classList.remove('demo-hidden');
+      void appMain.offsetWidth;
       appMain.classList.add('demo-animated-entrance');
 
       const cards = document.querySelectorAll('.track-card');
@@ -2368,6 +2289,10 @@ const DemoShowcase = {
 
   replay() {
     this.isTransitioned = false;
+    clearTimeout(this.timer);
+    if (this.hideTimeout) clearTimeout(this.hideTimeout);
+    if (this.progressInterval) clearInterval(this.progressInterval);
+
     const splash = document.getElementById('demo-splash-screen');
     const appMain = document.getElementById('app-main');
     if (splash && appMain) {
@@ -2379,26 +2304,14 @@ const DemoShowcase = {
       const progressFill = document.getElementById('demo-progress-fill');
       const progressPct = document.getElementById('demo-loader-pct');
       const progressText = document.getElementById('demo-loader-text');
-      if (progressFill) progressFill.style.width = '100%';
-      if (progressPct) progressPct.textContent = '100%';
-      if (progressText) progressText.innerHTML = '<i class="fa-solid fa-circle-check" style="color: #30D158;"></i> Demonstração pronta';
+      if (progressFill) progressFill.style.width = '0%';
+      if (progressPct) progressPct.textContent = '0%';
+      if (progressText) progressText.innerHTML = '<i class="fa-solid fa-bolt"></i> Reiniciando demonstração...';
 
-      clearTimeout(this.timer);
-      this.timer = setTimeout(() => {
-        this.triggerEntrance();
-      }, 1500);
+      this.init();
     }
   }
 };
-
-function lockVault() {
-  // Desativado no APK para manter o aplicativo sempre desbloqueado e acessível
-}
-
-async function checkSavedSession() {
-  // Desbloqueio imediato no ambiente nativo do APK
-  unlockAppWithTracks(DEFAULT_TRACKS);
-}
 
 // --------------------------------------------------------------------------
 // 11. INICIALIZAÇÃO NO DOM READY
@@ -2500,8 +2413,4 @@ document.addEventListener('DOMContentLoaded', () => {
       window.handleMediaAction('prev');
     }
   };
-  
-  setupMasterVolumeControls();
-  setupMasterBoostControls();
-  setupSoundMasterWidget();
 });
