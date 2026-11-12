@@ -1,12 +1,15 @@
 # 🎧 Binaural Labs Pro — Interactive Portfolio Demo
 
-[![Demo Edition](https://img.shields.io/badge/Demo-Interactive%20Showcase-FF1E27.svg)](https://github.com/MateusCelestinoProX/m-c-p---os-binaural-pro-demo)
+[![Live Demo](https://img.shields.io/badge/Production-Live%20Demo-black?logo=vercel&logoColor=white)](https://m-c-p-os-binaural-pro-demo.vercel.app)
+[![Demo Edition](https://img.shields.io/badge/Demo-Interactive%20Showcase-FF1E27.svg)](https://m-c-p-os-binaural-pro-demo.vercel.app)
 [![Web Audio API](https://img.shields.io/badge/Web%20Audio-DSP%20Chain-30D158.svg)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-[![Audio Bitrate](https://img.shields.io/badge/Bitrate-320%20kbps%20Stereo-FF9500.svg)](https://github.com/MateusCelestinoProX/m-c-p---os-binaural-pro-demo)
-[![WebGL](https://img.shields.io/badge/Shaders-37%20WebGL%20Effects-007AFF.svg)](https://github.com/MateusCelestinoProX/m-c-p---os-binaural-pro-demo)
-[![Offline Ready](https://img.shields.io/badge/Storage-IndexedDB%20Cache-9B51E0.svg)](https://github.com/MateusCelestinoProX/m-c-p---os-binaural-pro-demo)
+[![Audio Bitrate](https://img.shields.io/badge/Bitrate-320%20kbps%20Stereo-FF9500.svg)](https://m-c-p-os-binaural-pro-demo.vercel.app)
+[![WebGL](https://img.shields.io/badge/Shaders-37%20WebGL%20Effects-007AFF.svg)](https://m-c-p-os-binaural-pro-demo.vercel.app)
+[![Offline Ready](https://img.shields.io/badge/Storage-IndexedDB%20Cache-9B51E0.svg)](https://m-c-p-os-binaural-pro-demo.vercel.app)
 
 Instância de demonstração interativa de alta fidelidade do **Binaural Labs Pro**, concebida para portfólio de engenharia de software e áudio digital front-end. O software combina processamento de sinal em tempo real (DSP) com Web Audio API, aceleração por GPU via WebGL e uma experiência visual inspirada em glassmorphism e design Apple VisionOS.
+
+🔗 **Acesse a Demonstração Online:** [https://m-c-p-os-binaural-pro-demo.vercel.app](https://m-c-p-os-binaural-pro-demo.vercel.app)
 
 ---
 

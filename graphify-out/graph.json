@@ -27918,7 +27918,7 @@
       "node_kind": "heading",
       "norm_label": "1. web audio dsp chain (anti-clipping & amplificacao)",
       "source_file": "README.md",
-      "source_location": "L29"
+      "source_location": "L32"
     },
     {
       "id": "readme_2_mixagem_paralela_e_time_stretching",
@@ -27930,7 +27930,7 @@
       "node_kind": "heading",
       "norm_label": "2. mixagem paralela e time-stretching",
       "source_file": "README.md",
-      "source_location": "L35"
+      "source_location": "L38"
     },
     {
       "id": "readme_3_motor_webgl_com_37_shaders_nativos",
@@ -27942,7 +27942,7 @@
       "node_kind": "heading",
       "norm_label": "3. motor webgl com 37 shaders nativos",
       "source_file": "README.md",
-      "source_location": "L39"
+      "source_location": "L42"
     },
     {
       "id": "readme_4_persist\u00eancia_offline_com_indexeddb_service_worker",
@@ -27954,7 +27954,7 @@
       "node_kind": "heading",
       "norm_label": "4. persistencia offline com indexeddb & service worker",
       "source_file": "README.md",
-      "source_location": "L44"
+      "source_location": "L47"
     },
     {
       "id": "readme_arquitetura_t\u00e9cnica",
@@ -27966,7 +27966,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udee0\ufe0f arquitetura tecnica",
       "source_file": "README.md",
-      "source_location": "L27"
+      "source_location": "L30"
     },
     {
       "id": "readme_autor",
@@ -27978,7 +27978,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udc64 autor",
       "source_file": "README.md",
-      "source_location": "L72"
+      "source_location": "L75"
     },
     {
       "id": "readme_binaural_labs_pro_interactive_portfolio_demo",
@@ -28002,7 +28002,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\ude80 como executar localmente",
       "source_file": "README.md",
-      "source_location": "L50"
+      "source_location": "L53"
     },
     {
       "id": "readme_destaques_da_experi\u00eancia_demo",
@@ -28014,7 +28014,7 @@
       "node_kind": "heading",
       "norm_label": "\u2728 destaques da experiencia demo",
       "source_file": "README.md",
-      "source_location": "L13"
+      "source_location": "L16"
     },
     {
       "id": "readme_execu\u00e7\u00e3o_r\u00e1pida",
@@ -28026,7 +28026,7 @@
       "node_kind": "heading",
       "norm_label": "execucao rapida",
       "source_file": "README.md",
-      "source_location": "L55"
+      "source_location": "L58"
     },
     {
       "id": "readme_pr\u00e9_requisitos",
@@ -28038,7 +28038,7 @@
       "node_kind": "heading",
       "norm_label": "pre-requisitos",
       "source_file": "README.md",
-      "source_location": "L52"
+      "source_location": "L55"
     },
     {
       "id": "manifest",
@@ -68631,7 +68631,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -68642,7 +68642,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L35",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -68653,7 +68653,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -68664,7 +68664,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -68675,7 +68675,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -68686,7 +68686,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L27",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -68697,7 +68697,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L50",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -68708,7 +68708,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L72",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -68719,7 +68719,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -68730,7 +68730,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L55",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -89917,5 +89917,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3bb6f94894bb2c3b15f3a967005cbcb4fc09ffef"
+  "built_at_commit": "afccb34d81f4570cef6546e73f63c3ba77c60d26"
 }

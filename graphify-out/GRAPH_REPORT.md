@@ -1,7 +1,7 @@
-# Graph Report - m-c-p---os-binaural-pro-demo  (2026-11-11)
+# Graph Report - m-c-p---os-binaural-pro-demo  (2026-11-12)
 
 ## Corpus Check
-- 9 files · ~80,313 words
+- 9 files · ~80,321 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3bb6f948`
+- Built from commit: `afccb34d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
